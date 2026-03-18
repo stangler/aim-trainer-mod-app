@@ -1,0 +1,31 @@
+{
+  "name": "AimTrainer Mod (Forge 1.8.9)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  // コンテナ起動後に自動実行（依存関係セットアップ）
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+
+  // 推奨拡張機能
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-gradle"
+      ],
+      "settings": {
+        "java.configuration.updateBuildConfiguration": "automatic",
+        "java.compile.nullAnalysis.mode": "disabled",
+        "editor.formatOnSave": true,
+        "java.jdt.ls.java.home": "/usr/lib/jvm/java-8-openjdk-amd64"
+      }
+    }
+  },
+
+  // Minecraftのrunフォルダをマウント除外（大容量のため）
+  "mounts": [],
+
+  "remoteUser": "vscode"
+}

@@ -1,0 +1,16 @@
+[
+{
+    "modid": "aimtrainer",
+    "name": "AimTrainer",
+    "description": "BedWars PvP aim practice mod with moving dummy targets.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["YourName"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+}
+]
